@@ -5,11 +5,11 @@ import "../quote.css";
 
 const QuotePage = () => {
   const [quotesList, setQuotesList] = useState([]);
-  const [clickSubmit, setClickSubmit] = useState(false);
+//  const [clickSubmit, setClickSubmit] = useState(false);
 
   useEffect(() => {
     renderQuotes();
-  }, [clickSubmit]);
+  }, []);
 
   //function to render quotes to frontend
   const renderQuotes = () => {
@@ -25,7 +25,7 @@ const QuotePage = () => {
       });
   };
 
-  const submitNewQuote = (e) => {
+ /* const submitNewQuote = (e) => {
     e.preventDefault();
     let author = document.getElementById("author").value;
     let quote = document.getElementById("quote").value;
@@ -46,30 +46,12 @@ const QuotePage = () => {
     setClickSubmit(!clickSubmit);
     document.getElementById("form").reset();
   };
-
+*/
   return (
     <>
       <div className="page">
-        <div className="form-quote">
-          <form id="form">
-            <div>
-              <label>Enter your favorite quote:</label>
-              <input name="quote" id="quote" type="text" required></input>
-            </div>
-            <div>
-              <label>Who is the author</label>
-              <input name="author" id="author" type="text" required></input>
-            </div>
-
-            <button
-              name="button"
-              type="submit"
-              onClick={(e) => submitNewQuote(e)}
-            >
-              Submit
-            </button>
-          </form>
-        </div>
+        
+        
         <div>
           {quotesList.length > 0
             ? quotesList.map((ele) => {

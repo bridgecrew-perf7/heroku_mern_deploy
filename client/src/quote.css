@@ -5,6 +5,8 @@
 .quote-box {
   display: flex;
   flex-direction: column;
+  font-family: cursive;
+  border-radius: 0.4rem;
 }
 .author-box {
   display: flex;
@@ -13,6 +15,8 @@
   min-width: fit-content;
   margin-left: 65%;
   padding-right: 20px;
+  border-style: groove;
+  border-radius: 0.5rem;
 }
 .page {
   padding: 20px;

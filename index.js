@@ -22,7 +22,7 @@ mongoose
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-//import routes
+
 require("./routes/quoteRoute.js")(app);
 
 const PORT = process.env.PORT || 5000;
