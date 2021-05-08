@@ -11,7 +11,7 @@ app.use(cors());
 require("./models/quote");
 
 mongoose
-  .connect(process.env.MONGODB_CONNECTION_STRING, {
+  .connect("mongodb+srv://jitendra:anti7@12@herokudeploy.lqcfa.mongodb.net/Quotes?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
